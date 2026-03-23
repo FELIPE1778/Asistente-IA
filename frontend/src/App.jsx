@@ -22,7 +22,7 @@ function App() {
     setInput("")
     setCargando(true)
 
-    const respuesta = await fetch("https://asistente-ia-d9db.onreder.com/chat", {
+    const respuesta = await fetch("https://asistente-ia-d9db.onrender.com/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ mensajes: nuevosMensajes, modo })
