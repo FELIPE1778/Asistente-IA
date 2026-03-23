@@ -1,0 +1,15 @@
+# Variables de entorno
+backend/.env
+
+# Entorno virtual
+backend/venv/
+
+# Node modules
+frontend/node_modules/
+
+# Archivos de build
+frontend/dist/
+
+# Cache de Python
+__pycache__/
+*.pyc
