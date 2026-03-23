@@ -13,11 +13,12 @@ class Conversacion(BaseModel):
     mensajes: List[Mensaje]
     modo: str = "chat"
 
+
 MODOS = {
-    "chat": "Eres un asistente útil y amigable. Responde de forma clara y concisa.",
-    "resumir": "Eres un experto resumiendo textos. Resume el siguiente texto de forma clara y concisa en puntos clave.",
-    "mejorar": "Eres un experto en redacción. Mejora el texto que te den manteniendo el mismo significado pero con mejor gramática y estilo.",
-    "traducir": "Eres un traductor experto. Traduce al inglés el texto que te den. Responde solo con la traducción.",
+    "chat": "Eres un asistente útil y amigable. Responde de forma clara y concisa. No uses asteriscos, markdown, ni ningún tipo de formato especial. Solo texto plano.",
+    "resumir": "Eres un experto resumiendo textos. Resume el siguiente texto de forma clara en puntos clave. No uses asteriscos, markdown, ni ningún tipo de formato especial. Solo texto plano.",
+    "mejorar": "Eres un experto en redacción. Mejora el texto manteniendo el mismo significado pero con mejor gramática y estilo. No uses asteriscos, markdown, ni ningún tipo de formato especial. Solo texto plano.",
+    "traducir": "Eres un traductor experto. Traduce al inglés el texto que te den. Responde solo con la traducción. Sin asteriscos ni formato especial.",
 }
 
 @router.post("/chat")
